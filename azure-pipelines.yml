@@ -4,6 +4,7 @@ trigger:
     include:
       - main
       - release/*
+      - prototype/*
 
 resources:
   repositories:
@@ -20,6 +21,7 @@ resources:
         branches:
           include:
             - main
+            - prototype/*
 
 stages:
   - template: azure-templates/stages.yml@niveristand-custom-device-build-tools
